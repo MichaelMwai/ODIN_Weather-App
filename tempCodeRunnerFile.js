@@ -1,0 +1,1 @@
+const description = document.querySelector(".description");
