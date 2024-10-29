@@ -1,6 +1,6 @@
 console.log("connected");
-
-let location = "dubai";
+joijk;
+let city = "dubai";
 async function fetchWeatherData(location) {
   const apiKey = "K3JLS4FK6PRW6GNG3X2VLAK83";
   try {
@@ -22,7 +22,7 @@ async function fetchWeatherData(location) {
 }
 
 // Call the async function
-fetchWeatherData(location);
+fetchWeatherData(city);
 
 async function fetchLocationImage(location) {
   const apiKey = "9caRb20kCPktHlMAfCpuq1K0vU_BvOkVpLxyQ4Y8OEw";
@@ -44,4 +44,4 @@ async function fetchLocationImage(location) {
 }
 
 // Example usage
-fetchLocationImage(location + "+city");
+fetchLocationImage(city + "+city");

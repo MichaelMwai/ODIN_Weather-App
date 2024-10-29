@@ -4,15 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
     <title>Weather App</title>
   </head>
   <body>
-    <h1 id="description">Hi Michael!</h1>
-    <h1 id="temperature">Hi Michael!</h1>
-    <h1 id="humidity">Hi Michael!</h1>
-    <p></p>
-    <p id="p1">Hello World!</p>
-
+    <div id="weather-app">
+      <div class="left-panel">
+        <div class="search-bar">
+          <span class="icon material-symbols-outlined"> search </span>
+          <label for="searchBar"></label>
+          <input
+            type="search"
+            name="searchBar"
+            id="searchBar"
+            placeholder="Search for a place..."
+          />
+        </div>
+        <div class="weather-icon" id="icon">
+          <img src="weather.png" alt="" srcset="" />
+        </div>
+        <div class="temp">12c</div>
+        <div class="dateTime">Monday 16:00</div>
+        <div id="description">Mostly cloudy chances of rain</div>
+        <div id="resolvedAddress"> Nairobi, Kenya</div>
+        <div>
+          <img
+            id="location-image"
+            src="austin-distel-wD1LRb9OeEo-unsplash.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="right-panel">
+        <div>
+          <h2>Weather Forecast</h2>
+        </div>
+        <div class="upcoming-days">
+          <div class="upcoming-days-card">
+            <h3>Sun</h3>
+            <img src="weather.png" alt="" srcset="" />
+            <h3>78 c</h3>
+          </div>
+          <div class="upcoming-days-card">
+            <h3>Sun</h3>
+            <img src="weather.png" alt="" srcset="" />
+            <h3>78 c</h3>
+          </div>
+          <div class="upcoming-days-card">
+            <h3>Sun</h3>
+            <img src="weather.png" alt="" srcset="" />
+            <h3>78 c</h3>
+          </div>
+          <div class="upcoming-days-card">
+            <h3>Sun</h3>
+            <img src="weather.png" alt="" srcset="" />
+            <h3>78 c</h3>
+          </div>
+          <div class="upcoming-days-card">
+            <h3>Sun</h3>
+            <img src="weather.png" alt="" srcset="" />
+            <h3>78 c</h3>
+          </div>
+          <div class="upcoming-days-card">
+            <h3>Sun</h3>
+            <img src="weather.png" alt="" srcset="" />
+            <h3>78 c</h3>
+          </div>
+        </div>
+        <h2>Todays Highlights</h2>
+        <div class="highlights">
+          <div class="highlights-card">
+            <h4>Card Title</h4>
+            <h3>7.70Kp/h</h3>
+            <h4>South West</h4>
+          </div>
+          <div class="highlights-card">
+            <h4>Wind Status</h4>
+            <h3>7.70Kp/h</h3>
+            <h4>South West</h4>
+          </div>
+          <div class="highlights-card">
+            <h4>Sunset and Sunrise</h4>
+            <h3>7.70Kp/h</h3>
+            <h3>7.70Kp/h</h3>
+            <h4>South West</h4>
+          </div>
+          <div class="highlights-card">
+            <h4>Humidity</h4>
+            <h3>12%</h3>
+            <h4>Normal</h4>
+          </div>
+          <div class="highlights-card">
+            <h4>Visibility</h4>
+            <h3>5.2km</h3>
+            <h4>South West</h4>
+          </div>
+          <div class="highlights-card">
+            <h4>Air Quality</h4>
+            <h3>105/h3>
+            <h4>South West</h4>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
