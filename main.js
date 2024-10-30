@@ -7,14 +7,22 @@ let city = "nigeria";
 const date = new Date();
 const day = date.getDay();
 
-const weekday = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+const weekday = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
 const upcomingDaysCards = document.querySelectorAll(".upcoming-days-card");
 
 console.log("Today is " + weekday[day] + " btw.");
 
 async function fetchWeatherData(location) {
-  // const apiKey = "LEGCF2F4CGZC2HDWQ6RL9AZ23";
+  //const apiKey = "LEGCF2F4CGZC2HDWQ6RL9AZ23";
   try {
     const response = await fetch(
       `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=${apiKey}`,
@@ -42,8 +50,10 @@ async function fetchWeatherData(location) {
 
     upcomingDaysCards.forEach((card, index) => {
       if (data.days[index + 1]) {
-        const dayIndex = (day + index + 1) % 7; // Corrected to index + 1
-        const dayName = weekday[dayIndex]; // Get the day name from the weekday array
+        const dayIndex = (day + index + 1) % 7;
+        const dayName = weekday[dayIndex];
+
+        // Looping through weekly forcast cards
 
         card.querySelector(".day-name").innerText = dayName;
         card.querySelector(".weather-icon").src =
@@ -51,9 +61,11 @@ async function fetchWeatherData(location) {
         card.querySelector(".temperature").innerText =
           data.days[index + 1].temp + " °C";
       } else {
-        console.warn(`Data for day ${index + 1} is missing`);
+        console.warn(`Data for day ${weekday[index + 1]} is missing`);
       }
     });
+
+    //Wind
   } catch (error) {
     console.error("Error fetching weather data:", error);
   }

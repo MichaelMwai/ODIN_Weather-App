@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
@@ -27,13 +33,18 @@
             placeholder="Search for a place..."
           />
         </div>
-        <div class="weather-icon" >
-          <img id="icon" src="assets/weather-icons/clear-night.svg" alt="weather" srcset="" />
+        <div class="weather-icon">
+          <img
+            id="icon"
+            src="assets/weather-icons/clear-night.svg"
+            alt="weather"
+            srcset=""
+          />
         </div>
         <div id="temp">12c</div>
         <div id="datetime">2024-10-</div>
         <p id="description">Mostly cloudy chances of rain</p>
-        <div id="resolvedAddress"> Nairobi, Kenya</div>
+        <div id="resolvedAddress">Nairobi, Kenya</div>
         <div>
           <img
             id="location-image"
@@ -47,70 +58,103 @@
         <div>
           <h2>Weather Forecast</h2>
         </div>
-       <div class="upcoming-days">
-  <div class="upcoming-days-card">
-    <h3 class="day-name">Sun</h3>
-    <img class="weather-icon" src="weather.png" alt="Weather Icon" />
-    <h3 class="temperature">78 °C</h3>
-  </div>
-  <div class="upcoming-days-card">
-    <h3 class="day-name">Sun</h3>
-    <img class="weather-icon" src="weather.png" alt="Weather Icon" />
-    <h3 class="temperature">78 °C</h3>
-  </div>
-  <div class="upcoming-days-card">
-    <h3 class="day-name">Sun</h3>
-    <img class="weather-icon" src="weather.png" alt="Weather Icon" />
-    <h3 class="temperature">78 °C</h3>
-  </div>
-  <div class="upcoming-days-card">
-    <h3 class="day-name">Sun</h3>
-    <img class="weather-icon" src="weather.png" alt="Weather Icon" />
-    <h3 class="temperature">78 °C</h3>
-  </div>
-  <div class="upcoming-days-card">
-    <h3 class="day-name">Sun</h3>
-    <img class="weather-icon" src="weather.png" alt="Weather Icon" />
-    <h3 class="temperature">78 °C</h3>
-  </div>
-  <div class="upcoming-days-card">
-    <h3 class="day-name">Sun</h3>
-    <img class="weather-icon" src="weather.png" alt="Weather Icon" />
-    <h3 class="temperature">78 °C</h3>
-  </div>
-</div>
+        <div class="upcoming-days">
+          <div class="upcoming-days-card">
+            <h3 class="day-name">Sun</h3>
+            <img
+              class="weather-icon"
+              src="assets/weather-icons/showers-day.svg"
+              alt="Weather Icon"
+            />
+            <h3 class="temperature">78 °C</h3>
+          </div>
+          <div class="upcoming-days-card">
+            <h3 class="day-name">Sun</h3>
+            <img
+              class="weather-icon"
+              src="assets/weather-icons/showers-day.svg"
+              alt="Weather Icon"
+            />
+            <h3 class="temperature">78 °C</h3>
+          </div>
+          <div class="upcoming-days-card">
+            <h3 class="day-name">Sun</h3>
+            <img
+              class="weather-icon"
+              src="assets/weather-icons/showers-day.svg"
+              alt="Weather Icon"
+            />
+            <h3 class="temperature">78 °C</h3>
+          </div>
+          <div class="upcoming-days-card">
+            <h3 class="day-name">Sun</h3>
+            <img
+              class="weather-icon"
+              src="assets/weather-icons/showers-day.svg"
+              alt="Weather Icon"
+            />
+            <h3 class="temperature">78 °C</h3>
+          </div>
+          <div class="upcoming-days-card">
+            <h3 class="day-name">Sun</h3>
+            <img
+              class="weather-icon"
+              src="assets/weather-icons/showers-day.svg"
+              alt="Weather Icon"
+            />
+            <h3 class="temperature">78 °C</h3>
+          </div>
+          <div class="upcoming-days-card">
+            <h3 class="day-name">Sun</h3>
+            <img
+              class="weather-icon"
+              src="assets/weather-icons/showers-day.svg"
+              alt="Weather Icon"
+            />
+            <h3 class="temperature">78 °C</h3>
+          </div>
+        </div>
         <h2>Todays Highlights</h2>
         <div class="highlights">
           <div class="highlights-card">
-            <h4>Card Title</h4>
-            <h3>7.70Kp/h</h3>
-            <h4>South West</h4>
+            <h4>Temp range</h4>
+            <h3 id="tempmax">7.70Kp/h</h3>
+            <h3 id="tempmin">7.70Kp/h</h3>
           </div>
           <div class="highlights-card">
             <h4>Wind Status</h4>
             <h3>7.70Kp/h</h3>
-            <h4>South West</h4>
+            <img src="assets/weather-icons/wind.svg" alt="" />
           </div>
           <div class="highlights-card">
             <h4>Sunset and Sunrise</h4>
-            <h3>7.70Kp/h</h3>
-            <h3>7.70Kp/h</h3>
-            <h4>South West</h4>
+            <h3 id="sunrise">
+              06:11:39
+              <img src="assets/weather-icons/sunrise.svg" alt="" />7.70Kp/h
+            </h3>
+            <h3 id="sunset">
+              18:21:05
+              <img src="assets/weather-icons/sunset.svg" alt="" />7.70Kp/h
+            </h3>
           </div>
           <div class="highlights-card">
             <h4>Humidity</h4>
-            <h3>12%</h3>
+            <h3 id="humidity">12%</h3>
             <h4>Normal</h4>
           </div>
           <div class="highlights-card">
-            <h4>Visibility</h4>
-            <h3>5.2km</h3>
+            <h4>Precipitation prob</h4>
+            <h3 id="visibility">15</h3>
             <h4>South West</h4>
           </div>
           <div class="highlights-card">
-            <h4>Air Quality</h4>
-            <h3>105/h3>
-            <h4>South West</h4>
+            <h4>Moon Phase</h4>
+            <img
+              id="moonphase"
+              src="assets/weather-icons/moon-last-quarter.svg"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
       </div>

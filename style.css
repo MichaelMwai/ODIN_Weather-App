@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -15,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  width: 500px;
   min-width: 300px;
   padding: 20px;
   gap: 40px;
@@ -65,13 +66,14 @@ input {
 .right-panel {
   display: flex;
   flex-direction: column;
-  background-color: lightgrey;
+  background-color: deepskyblue;
   width: 1fr;
-  padding: 40px;
+  padding: 20px 40px;
 }
 
 .upcoming-days {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(6, 1fr);
   flex-grow: 0;
   gap: 10px;
@@ -81,23 +83,34 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 200px;
+  height: 250px;
   min-width: 100px;
   align-items: center;
   background-color: aliceblue;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 5px 5px rgb(0, 0, 0, 0.2);
+  transition: 300ms;
+}
+
+.upcoming-days-card:hover {
+  background-color: white;
+  padding: 15px;
+}
+
+.upcoming-days-card h3 {
+  font-size: 25px;
+  color: gray;
 }
 
 .upcoming-days-card img {
-  width: 40%;
+  width: 60%;
 }
 
 .highlights {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 300px);
+  grid-template-rows: repeat(2, 400px);
   flex-grow: 0;
   gap: 20px;
 }
@@ -113,6 +126,28 @@ input {
   box-shadow: 2px 5px 5px rgb(0, 0, 0, 0.2);
 }
 
+.highlights-card img {
+  width: 40%;
+}
+
+.highlights-card h4 {
+  font-size: 30px;
+}
+.highlights-card h3 {
+  font-size: 50px;
+}
+
 h2 {
   margin: 30px 0;
+  font-size: 40px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: aliceblue;
+}
+
+#sunrise,
+#sunset {
+  display: flex;
+  align-items: center;
 }
